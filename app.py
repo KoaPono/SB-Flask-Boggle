@@ -5,10 +5,7 @@ from boggle import Boggle
 boggle_game = Boggle()
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = "oasci43n02dk"
-#app.debug = True
-
-#debug = DebugToolbarExtension(app)
+app.config['SECRET_KEY'] = "bananas"
 
 @app.route('/')
 def show_start_page():
