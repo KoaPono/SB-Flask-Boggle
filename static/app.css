@@ -1,0 +1,135 @@
+body {
+	background-color: #fefae0;
+	font-family: "Poppins", "Rubik", sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 60px;
+	line-height: 72px;
+	letter-spacing: -1px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	color: #383732;
+}
+
+table {
+	border-spacing: 8px 12px;
+}
+
+#wrapper {
+	max-width: 800px;
+	display: flex;
+	justify-content: center;
+	@media (max-width: 600px) {
+		flex-wrap: wrap;
+		max-width: 500px;
+	}
+}
+
+#letter-container {
+	width: 425px;
+	display: flex;
+	flex-wrap: wrap;
+	user-select: none;
+	height: 375px;
+}
+
+.letter {
+	line-height: 45px;
+	padding-top: 12px;
+	background-color: #e9edc9;
+	color: #3c4a34;
+	width: 60px;
+	text-align: center;
+	box-shadow: 0px 6px #ccd5ae;
+	border-radius: 10px;
+	user-select: none;
+	-webkit-user-select: none;
+	font-weight: bold;
+}
+.letter p {
+	font-size: 55px;
+	margin: 0px;
+	position: relative;
+	top: -5px;
+	user-select: none;
+}
+
+#info-container {
+	display: flex;
+	justify-content: start;
+	flex-direction: column;
+	border-left: 5px solid #faedcd;
+	padding-left: 20px;
+	width: 300px;
+}
+
+#info-container p,
+i {
+	font-size: 30px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#game-info {
+	display: flex;
+}
+
+#icon-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #d4a373;
+	margin-top: 3px;
+}
+
+#info-text {
+	flex-direction: column;
+	align-items: start;
+	margin-left: 10px;
+	color: #383732;
+}
+
+input {
+	margin-top: 30px;
+	border: none;
+	border-bottom: 3px solid #d4a373;
+	width: 225px;
+	height: 30px;
+	font-size: 30px;
+	padding-left: 12px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 6px;
+	background: #fefefe;
+}
+
+.submit-button {
+	background-color: #fefefe;
+	color: #d4a373;
+	border-radius: 6px;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 18px;
+	padding: 10px 16px;
+	text-align: center;
+	border: 2px solid #d4a373;
+	cursor: pointer;
+	user-select: none;
+	-webkit-user-select: none;
+	margin-top: 8px;
+}
+
+.msg.err {
+	background-color: indianred;
+	border-radius: 6px;
+	padding: 5px;
+}
+
+.msg.ok {
+	background-color: #e9edc9;
+	border-radius: 6px;
+	padding: 5px;
+}
